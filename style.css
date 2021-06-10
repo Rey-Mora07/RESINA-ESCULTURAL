@@ -1,0 +1,166 @@
+body {
+    background-color: white;
+    color: white;
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+    background: black;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header .logo {
+    color: white;
+    font-size: 50px;
+    line-height: 200px;
+    float: left;
+}
+
+header nav {
+    float: right;
+    line-height: 200px;
+}
+
+header nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    transition: all 500ms ease;
+}
+header nav a:hover {
+    background-color: grey;
+    border-radius: 50px;
+}
+
+.header2 {
+    position: fixed;
+    height: 100px;
+}
+
+.header2 .logo {
+    line-height: 100px;
+    font-size: 30px;
+}
+
+.header2 nav {
+    line-height: 100px;
+}
+
+@media screen and (max-width: 950px) {
+    header .logo, header nav {
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+    }
+    .header2 {
+        height: auto;
+    }
+    .header2 .logo, .header2 nav {
+        line-height: 50px;
+    }
+}
+
+h2, h3 {
+    background-color: black;
+    margin: 20px 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+.carrusel {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.carrusel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 1140px;
+}
+
+.carrusel-fotos {
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+}
+
+.carrusel-fotos img {
+    background: black;
+    border: 4px solid black;
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.carrusel-menu {
+    display: none;
+}
+
+@media screen and (min-width: 500px){
+    .carrusel-fotos {
+        overflow: hidden;
+    }
+    .carrusel-fotos img {
+        width: 1135px;
+        height: 1000px;
+    }
+    .carrusel-menu {
+        display: block;
+    }
+    .carrusel-menu img {
+        box-sizing: border-box;
+        width: 50px;
+        height: 40px;
+        border: 10px solid black;
+    }
+    .carrusel-menu img:hover {
+        border: none;
+    }
+}
+
+p {
+    background-color:black;
+    margin: 20px 100px;
+    padding: 30px;
+}
+
+form {
+    background-color: black;
+    width: 25%;
+    height: 280px;
+    margin: 20px 100px;
+    padding: 30px;
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    display: block;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 300px;
+    min-height: 10px;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
